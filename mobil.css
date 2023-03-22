@@ -1,0 +1,7 @@
+.übersicht {
+    flex-direction: column;
+}
+
+.menü-unten {
+    flex-wrap: wrap;
+}

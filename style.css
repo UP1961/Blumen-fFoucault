@@ -1,0 +1,175 @@
+html {
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+}
+
+body {
+    width: 95%;
+    margin: 1rem auto; /*stellt body mittig*/
+    background-color: rgb(100, 127, 58);
+    }
+
+nav {
+    width: 80%; /*läßt rechts Platz für das Logo*/
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 1rem 0;
+    padding: 0; /*schließt links bündig ab*/
+    justify-content: left;
+}
+    
+nav li {
+    background-color: rgb(46, 71, 7);
+    list-style-type: none;
+    margin: 0.5rem;
+    padding: 2rem 1rem;    
+}
+
+nav a {
+    color:rgb(148, 238, 14);
+    text-decoration: none;               
+}
+
+nav a:hover {
+    color: rgb(237, 244, 227);
+}
+
+nav a:active {
+    color:rgb(17, 17, 16);
+}
+
+nav li:last-child {
+    margin-left: auto; /*setzt das letzte Glied in der Kette ganz nach rechts*/
+    color:rgb(184, 222, 127)
+
+}
+
+#logo {
+    font-size: 5rem;
+    margin: 1rem 2rem 2rem 0;
+    float: right; /*setzt das Logo rechts neben nav*/
+}
+    
+
+
+
+
+/*Formatierung banner*/
+
+#Gärtnerei {
+    text-align: center;
+    font-size: 3rem;
+    color:rgb(237, 244, 227);
+} /*ist das div über dem Banner mit dem Namen der Gärterei*/
+
+
+
+.banner {
+    position: relative;
+    display: flex;
+    margin: 5rem auto;
+    height: 20rem;
+    width: inherit;
+    border: 1px solid black;
+    background-image: url(./Bilder/Banner.png);
+}
+
+.banner h1 {
+    width: 50rem;
+    margin: auto; /*setzt den block für die Überschrift mittig*/
+    text-align: center;
+    color:rgb(46, 71, 7);
+    font-size: 3rem;
+}
+
+
+
+/*Formatierung Bildleiste*/
+
+.übersicht /* ist das umgebende div*/
+
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    align-items: center; 
+    background-color:rgb(71, 95, 32);
+    color:rgb(203, 224, 171);
+    }
+
+
+/*das folgende formatiert die Bilder responisiv*/
+
+.image-container {
+    min-width: 30%;
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+    }
+
+.übersicht img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.image-container a {
+    color:rgb(149, 231, 16);
+    text-decoration: none;
+    }
+
+.image-container a:hover {
+    color: white;
+}
+
+
+/*Formatierung Footer*/
+
+footer {
+    color: rgb(38, 60, 5);
+    background-color: rgb(142, 206, 58);
+    width: inherit;
+    padding: 0.5rem;
+    margin: 2rem auto;
+}
+
+footer h2 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.menü-unten {
+    display: flex;
+    justify-content: space-around;
+   }
+
+
+footer p {
+    padding: 2rem;
+    border:rgb(46, 71, 7) 1px solid;
+}
+
+footer a {
+    text-decoration: none;
+    background-color: rgb(46, 71, 7);
+    color: rgb(207, 232, 169);
+}
+
+footer a:hover {
+    background-color: rgb(114, 135, 80);
+}
+
+footer a:active {
+    background-color: rgb(149, 231, 16);
+
+}

@@ -1,0 +1,11 @@
+nav ul {
+    flex-direction: column;
+}
+
+nav li:last-child {
+    display: none;
+}
+
+#Gärtnerei {
+    font-size: 2rem;
+}
